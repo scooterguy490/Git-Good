@@ -18,7 +18,6 @@ public class Main extends ApplicationAdapter {
         Gdx.graphics.setWindowedMode(1016, 1024);
         Gdx.graphics.setResizable(false);
 
-
         batch = new SpriteBatch();
         image = new Texture("libgdx.png");
     }
@@ -27,9 +26,8 @@ public class Main extends ApplicationAdapter {
     public void render() {
         ScreenUtils.clear(0.15f, 0.15f, 0.2f, 1f); //background color
         batch.begin();
-        batch.draw(image, 140, 210); //image size
+        batch.draw(image, 140, 210); //image location
         batch.end();
-        
     }
 
     @Override
