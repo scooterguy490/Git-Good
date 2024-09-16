@@ -14,15 +14,20 @@ public class Main extends ApplicationAdapter {
 
     @Override
     public void create() {
+        //sets window to the resolution and aspect ratio
+        Gdx.graphics.setWindowedMode(1016, 1024);
+        Gdx.graphics.setResizable(false);
+
+
         batch = new SpriteBatch();
         image = new Texture("libgdx.png");
     }
 
     @Override
     public void render() {
-        ScreenUtils.clear(0.15f, 0.15f, 0.2f, 1f);
+        ScreenUtils.clear(0.15f, 0.15f, 0.2f, 1f); //background color
         batch.begin();
-        batch.draw(image, 140, 210);
+        batch.draw(image, 140, 210); //image size
         batch.end();
     }
 
