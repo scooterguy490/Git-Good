@@ -1,4 +1,4 @@
-package io.github.froggers_revenge.testing;
+package io.github.froggers_revenge.Game_Window;
 
 import javax.swing.*;
 
@@ -18,6 +18,8 @@ public class window {
         froggerFrame.add(gamePanel);
         
         froggerFrame.pack();
+
+        gamePanel.startGameThread();
 
     }
 
