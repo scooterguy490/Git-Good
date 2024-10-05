@@ -11,6 +11,7 @@ import com.badlogic.gdx.utils.ScreenUtils;
 public class Main extends ApplicationAdapter {
     private SpriteBatch batch;
     private Texture image;
+    private Frogger frogger;    //declare frogger
 
     @Override
     public void create() {
@@ -20,6 +21,7 @@ public class Main extends ApplicationAdapter {
 
         batch = new SpriteBatch();
         image = new Texture("libgdx.png");
+        frogger = new Frogger();
     }
 
     @Override
@@ -34,5 +36,6 @@ public class Main extends ApplicationAdapter {
     public void dispose() {
         batch.dispose();
         image.dispose();
+        frogger.dispose();
     }
 }
